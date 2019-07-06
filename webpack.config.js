@@ -43,7 +43,7 @@ module.exports = {
   },
   devtool: 'inline-source-map',
   output: {
-    path: __dirname + '/public',
+    path: __dirname + '/doc',
     filename: '[name].bundle.js',
   },
   devServer: {
