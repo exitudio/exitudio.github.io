@@ -41,7 +41,7 @@ module.exports = {
     ]
   },
   output: {
-    path: __dirname + '/doc',
+    path: __dirname + '/docs',
     chunkFilename: '[name].bundle.js',
     filename: '[name].bundle.js',
   },
