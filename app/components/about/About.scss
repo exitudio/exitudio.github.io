@@ -1,0 +1,25 @@
+@import '../main/Layout.scss';
+hr{
+    &.main-split{
+        border-top: 0px solid #333;
+        margin: 20px 0px 100px 0px;
+    }
+    &.item-split{
+        border-top: 0px solid #333;
+        margin: 20px 20px 40px 20px;
+    }
+}
+
+.about-container{
+    @extend .container;
+    margin-bottom:100px;
+}
+
+.date{
+    float:right;
+}
+.date::after{
+    content: " ";
+    clear: both;
+    display: table;
+}

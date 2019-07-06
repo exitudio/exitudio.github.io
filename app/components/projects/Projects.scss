@@ -1,0 +1,108 @@
+@import '../../scss/config.scss';
+.port-wrapper{
+    float:left;
+    width:100%;
+    -webkit-perspective: 500px; /* Chrome, Safari, Opera */
+    perspective: 500px;
+
+    .more-less-text{
+        font-size: 30px;
+        margin-left: 10px;
+        display: inline;
+    }
+    .group-wrapper{
+        margin-top:40px;
+        border-bottom: 1px solid #eee;
+        .project-group{
+            width:100%;
+            margin:20px 0 50px 0;
+            .port-item{
+                //for set size with padding
+                -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+                -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+                box-sizing: border-box;         /* Opera/IE 8+ */
+                
+                width:100%;
+                padding: 20px 10px 20px 10px;
+                float:left;
+                
+                .video{
+                    cursor: pointer; cursor: hand;
+                    position:relative;
+                    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+                    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+                    box-sizing: border-box;         /* Opera/IE 8+ */
+                    width:100%;
+                    
+                    float:left;
+                    height:200px;
+                    padding: 0;
+
+                    text-align: center;
+
+                    .image{
+                        max-height: 100%;  
+                        max-width: 100%; 
+                        width: auto;
+                        height: auto;
+                        position: absolute;  
+                        top: 0;  
+                        bottom: 0;  
+                        left: 0;  
+                        right: 0;  
+                        margin: auto;
+                    }
+                }
+                .description{
+                    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+                    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+                    box-sizing: border-box;         /* Opera/IE 8+ */
+                    width:100%;
+                    float:left;
+                    padding: 0 10 0 10;
+                    color:#666;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/* make menu get height properly*/
+.port-item:before, .port-item:after, .project-group::after{
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+
+
+@media (min-width: $container-xsmall-min-width){
+    .port-wrapper{
+        .group-wrapper{
+            .project-group{
+                .port-item{
+                    width:50%;
+                    .video{
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $container-medium-min-width){
+    .port-wrapper{
+        .group-wrapper{
+            .project-group{
+                .port-item{
+                    width:25%;
+                    .video{
+                        // width:50%;
+                    }
+                }
+            }
+        }
+    }
+}
