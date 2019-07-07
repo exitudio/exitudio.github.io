@@ -75,7 +75,7 @@ function drawTerm(x1, y1, x2, y2) {
 
 function getCoefficient(f, n) {
   var coefficient = { x: 0, y: 0 };
-  for (var i = 0; i < numSampling; i++) {
+  for (var i = 0; i <= numSampling; i++) {
     var t = i / numSampling;
     var points = f(t);
     coefficient.x += 2 * points.x * Math.cos(n * 2 * Math.PI * t) * dt;
@@ -108,7 +108,9 @@ function play(callback) {
 
 function getPointFactory(points) {
   return function getPoint(t) {
-    t = parseInt(t * points.length);
+    if (t < 1) {
+      t = parseInt(t * points.length);
+    }
     return {
       x: points[t][0],
       y: points[t][1]
