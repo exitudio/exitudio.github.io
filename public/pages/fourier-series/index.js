@@ -16,9 +16,11 @@ async function startImageApp() {
 async function startDrawApp() {
   stop();
   drawPoint({ x: 0, y: 0 });
-  let points = await startGenPoints(canvas, context);
-  points = trimPoints(points, 400);
-  fourierStart(points);
+  try {
+    let points = await startGenPoints(canvas, context);
+    points = trimPoints(points, 400);
+    fourierStart(points);
+  } catch (e) {}
 }
 function fourierStart(points) {
   const fourier = dft(points);

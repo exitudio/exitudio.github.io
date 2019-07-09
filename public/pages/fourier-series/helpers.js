@@ -57,12 +57,15 @@ function play(callback, numSampling, delay = 30) {
     i++;
     if (i >= numSampling) i = 0;
   }, delay);
+  console.log("start:", intervalId);
 }
 function stop() {
+  console.log('stop')
+  clearInterval(intervalId);
+  removeDrawListener();
   context.clearRect(0, 0, canvas.width, canvas.height);
   context.fillStyle = "black";
   context.fillRect(0, 0, canvas.width, canvas.height);
-  clearInterval(intervalId);
 }
 
 function trimPoints(points, numSampling) {
