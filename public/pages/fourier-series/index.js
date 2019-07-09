@@ -18,7 +18,9 @@ async function startDrawApp() {
   drawPoint({ x: 0, y: 0 });
   try {
     let points = await startGenPoints(canvas, context);
-    points = trimPoints(points, 400);
+    if (points.length > 400) {
+      points = trimPoints(points, 400);
+    }
     fourierStart(points);
   } catch (e) {}
 }
