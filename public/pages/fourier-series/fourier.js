@@ -7,8 +7,8 @@ function dft(x) {
     let im = 0;
     for (let n = 0; n < N; n++) {
       const phi = (TWO_PI * k * n) / N;
-      re += x[n] * Math.cos(phi);
-      im -= x[n] * Math.sin(phi);
+      re += x[n].x * Math.cos(phi) + x[n].y * Math.sin(phi);
+      im -= x[n].x * Math.sin(phi) - x[n].y * Math.cos(-phi);
     }
     re = re / N;
     im = im / N;
