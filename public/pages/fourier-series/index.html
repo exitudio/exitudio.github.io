@@ -19,16 +19,64 @@
   </head>
 
   <body>
-    <canvas
-      id="fourier-series"
-      width="800"
-      height="800"
-      style="border:1px solid #000000;"
-    >
-    </canvas>
-    <a href="https://www.youtube.com/watch?v=r6sGWTCMz2k&ab_channel=3Blue1Brown">ref1</a>
-    <a href="https://mathematica.stackexchange.com/questions/171755/how-can-i-draw-a-homer-with-epicycloids">ref2</a>
-    <a href="https://thecodingtrain.com/CodingChallenges/130.1-fourier-transform-drawing.html">ref3</a>
+    <div style="margin: auto; width: 800px;">
+      <canvas
+        id="fourier-series"
+        width="800"
+        height="800"
+        style="border:1px solid #000000;"
+      >
+      </canvas>
+      <button
+        id="draw-btn"
+        style="
+        background-color: #008CBA;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+      "
+      >
+        Draw Your Image
+      </button>
+      <button
+        id="image-btn"
+        style="
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+      "
+      >
+        Show Default Image
+      </button>
+    </div>
+    <div>
+      <a
+        href="https://www.youtube.com/watch?v=r6sGWTCMz2k&ab_channel=3Blue1Brown"
+        >ref1</a
+      >
+      <a
+        href="https://mathematica.stackexchange.com/questions/171755/how-can-i-draw-a-homer-with-epicycloids"
+        >ref2</a
+      >
+      <a
+        href="https://thecodingtrain.com/CodingChallenges/130.1-fourier-transform-drawing.html"
+        >ref3</a
+      >
+      <a href="https://shinao.github.io/PathToPoints/">convert to points</a>
+    </div>
+    <!-- <script type="text/javascript" src="https://unpkg.com/svg-points/dist/svg-points.min.js"></script> -->
+    <script type="text/javascript" src="image.js"></script>
     <script type="text/javascript" src="helpers.js"></script>
     <script type="text/javascript" src="fourier.js"></script>
     <script type="text/javascript" src="draw.js"></script>

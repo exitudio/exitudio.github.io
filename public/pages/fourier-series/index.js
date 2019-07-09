@@ -4,24 +4,29 @@ const context = canvas.getContext("2d");
 context.fillStyle = "black";
 context.fillRect(0, 0, canvas.width, canvas.height);
 
-const numSampling = 500;
-const numTerm = 10;
-let getPoint;
-let fourier;
-
-startApp();
-async function startApp() {
+startImageApp();
+document.getElementById("draw-btn").addEventListener("click", startDrawApp);
+document.getElementById("image-btn").addEventListener("click", startImageApp);
+async function startImageApp() {
+  stop();
+  let points = getImagePoints();
+  points = moveToCenter(points);
+  fourierStart(points);
+}
+async function startDrawApp() {
+  stop();
   drawPoint({ x: 0, y: 0 });
   let points = await startGenPoints(canvas, context);
-  points = trimPoints(points, numSampling);
-  getPoint = getPointFactory(points);
-  fourier = dft(points);
+  points = trimPoints(points, 400);
+  fourierStart(points);
+}
+function fourierStart(points) {
+  const fourier = dft(points);
   fourier.sort((a, b) => b.amp - a.amp);
-  play(playAnimation(fourier, points), 33);
+  play(playAnimation(fourier, points), points.length, 33);
 }
 
 function playAnimation(fourier, points) {
-  console.log(fourier.length);
   return function(t) {
     let x = 0;
     let y = 0;
@@ -41,13 +46,9 @@ function playAnimation(fourier, points) {
       );
       x += nextX;
       y += nextY;
-      // if (fourier[i].amp < 1) break;
     }
     drawPoint({ x, y }, "#0000ff");
-    drawPoint(getPoint(t));
+    drawPoint(points[parseInt(t * points.length)]);
     drawPoints(points);
-
-    // drawTerm(200, -300, 100, 100, .5);
-    // drawTerm(-200, 300, 200, 200, 0.3);
   };
 }

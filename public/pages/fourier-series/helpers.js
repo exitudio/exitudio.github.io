@@ -36,7 +36,7 @@ function drawPoint(point, color) {
 function drawPoints(points) {
   context.beginPath();
   context.strokeStyle = "#1FA8EC";
-  context.lineWidth = 1;
+  context.lineWidth = 2;
   for (let i = 0; i < points.length; i++) {
     const prev = i > 0 ? points[i - 1] : points[points.length - 1];
     context.moveTo(center.x + prev.x, center.y + prev.y);
@@ -46,9 +46,10 @@ function drawPoints(points) {
   context.closePath();
 }
 
-function play(callback, delay = 30) {
-  var i = 0;
-  setInterval(function() {
+let intervalId = -1;
+function play(callback, numSampling, delay = 30) {
+  let i = 0;
+  intervalId = setInterval(function() {
     context.clearRect(0, 0, canvas.width, canvas.height);
     context.fillStyle = "black";
     context.fillRect(0, 0, canvas.width, canvas.height);
@@ -57,12 +58,11 @@ function play(callback, delay = 30) {
     if (i >= numSampling) i = 0;
   }, delay);
 }
-
-function getPointFactory(points) {
-  return function getPoint(t) {
-    t = parseInt(t * points.length);
-    return points[t];
-  };
+function stop() {
+  context.clearRect(0, 0, canvas.width, canvas.height);
+  context.fillStyle = "black";
+  context.fillRect(0, 0, canvas.width, canvas.height);
+  clearInterval(intervalId);
 }
 
 function trimPoints(points, numSampling) {
@@ -78,14 +78,14 @@ function moveToCenter(points) {
   const newPoints = [];
   let avgX = 0;
   let avgY = 0;
-  for (let i = 0; i < numSampling; i++) {
-    avgX += points[i][0];
-    avgY += points[i][1];
+  for (let i = 0; i < points.length; i++) {
+    avgX += points[i].x;
+    avgY += points[i].y;
   }
   avgX = avgX / points.length;
   avgY = avgY / points.length;
-  for (let i = 0; i < numSampling; i++) {
-    newPoints.push([points[i][0] - avgX, points[i][1] - avgY]);
+  for (let i = 0; i < points.length; i++) {
+    newPoints.push({ x: points[i].x - avgX, y: points[i].y - avgY });
   }
   return newPoints;
 }
