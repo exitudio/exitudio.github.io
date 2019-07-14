@@ -1,0 +1,7 @@
+@import '../main/Layout.scss';
+
+.research-container{
+    @extend .container;
+    margin-bottom:100px;
+    a {text-decoration: underline;}
+}
