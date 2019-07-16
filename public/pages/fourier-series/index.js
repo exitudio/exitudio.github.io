@@ -3,6 +3,7 @@ const canvas = document.getElementById("fourier-series");
 const context = canvas.getContext("2d");
 context.fillStyle = "black";
 context.fillRect(0, 0, canvas.width, canvas.height);
+const MAX_DRAW = 100;
 
 startImageApp();
 document.getElementById("draw-btn").addEventListener("click", startDrawApp);
@@ -31,6 +32,7 @@ function fourierStart(points) {
 }
 
 function playAnimation(fourier, points) {
+  const historyPoints = [];
   return function(t) {
     let x = 0;
     let y = 0;
@@ -54,5 +56,11 @@ function playAnimation(fourier, points) {
     drawPoint({ x, y }, "#0000ff");
     drawPoint(points[parseInt(t * points.length)]);
     drawPoints(points);
+
+    historyPoints.push({ x, y });
+    if (historyPoints.length > MAX_DRAW) {
+      historyPoints.shift();
+    }
+    drawHistory(historyPoints);
   };
 }

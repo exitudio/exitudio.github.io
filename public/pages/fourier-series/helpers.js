@@ -34,16 +34,26 @@ function drawPoint(point, color) {
 }
 
 function drawPoints(points) {
-  context.beginPath();
   context.strokeStyle = "#1FA8EC";
   context.lineWidth = 2;
-  for (let i = 0; i < points.length; i++) {
-    const prev = i > 0 ? points[i - 1] : points[points.length - 1];
-    context.moveTo(center.x + prev.x, center.y + prev.y);
+  context.beginPath();
+  context.moveTo(center.x + points[0].x, center.y + points[0].y);
+  for (let i = 1; i < points.length; i++) {
     context.lineTo(center.x + points[i].x, center.y + points[i].y);
   }
-  context.stroke();
   context.closePath();
+  context.stroke();
+}
+function drawHistory(points) {
+  context.lineWidth = 2;
+  for (let i = 1; i < points.length; i++) {
+    context.beginPath();
+    const brightness = i/points.length;
+    context.strokeStyle = "rgba(255, 0, 0, " + brightness + ")";
+    context.moveTo(center.x + points[i-1].x, center.y + points[i-1].y);
+    context.lineTo(center.x + points[i].x, center.y + points[i].y);
+    context.stroke();
+  }
 }
 
 let intervalId = -1;
