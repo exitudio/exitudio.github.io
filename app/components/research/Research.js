@@ -80,7 +80,7 @@ const Research = () => {
         <br />
       </ul>
       <h2>Reinforcement</h2>I developed my own framework on top of Pytorch to be
-      able to plugin with multiple RL algorithms in order to experience faster
+      able to plugin with multiple RL algorithms in order to experiment faster
       <ul>
         <li>
           <a
