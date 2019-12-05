@@ -6,6 +6,8 @@ const Research = () => {
       <hr />
       <h1>Research</h1>
       <hr />
+      <b>Research Interests:</b> Self Supervised Reinforcement Learning and Computer Vision
+      <hr />
       <h2>Computer Vision</h2>
       <ul>
         <li>
@@ -13,7 +15,7 @@ const Research = () => {
             href="https://github.com/exitudio/research-ai/blob/master/experiment/RAM/RAM.ipynb"
             target="_blank"
           >
-            RAM [Recurrent Models of Visual Attention] with Pytorch
+            [PAPER REPLICATION] RAM (Recurrent Models of Visual Attention) with Pytorch
           </a>
         </li>
         <br />

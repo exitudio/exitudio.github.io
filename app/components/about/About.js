@@ -9,11 +9,11 @@ const About = () => {
       <h2>WORK EXPERIENCE</h2>
       <h2>Cox Automotive</h2>
       <div className="date">08/2016-05/2017</div>
-      <h3>Senior Software Engineer</h3>
+      <h3>Senior Full Stack Software Engineer & Machine Learning Engineer</h3>
       <ul>
         <li>
           Created machine learning and statistical modeling to predict
-          probability of lender approval and deploy machine learning model on
+          probability of booking contracts and deploy machine learning model on
           AWS using Sage maker, Lambda, API gateway, and EC2
         </li>
         <li>
@@ -29,8 +29,17 @@ const About = () => {
           private npm supporting Redux and Redux-saga
         </li>
         <li>
-          Refactored code, reviewed PR, and drove team to follow convention and
-          best practice
+          Refactored the profitable legacy application by decoupling data
+          pipeline and the view components by running a new architecture in
+          parallel without server downtime
+        </li>
+        <li>
+          Guided engineers to follow team design pattern and company
+          architecture
+        </li>
+        <li>
+          Implemented continuous integration using Jenkins for automating the
+          deployment
         </li>
         <li>
           Developed Digital Showroom web application to facilitate customers to
@@ -38,24 +47,28 @@ const About = () => {
         </li>
       </ul>
       <h2>Stevens Institute of Technology, Hoboken, New Jersey</h2>
-      <div className="date">08/2016-05/2017</div>
+      <div className="date">01/2016-05/2017</div>
       <h3>Research Assistant</h3>
       <b>Research Interests:</b> Reinforcement Learning and Computer Vision
       <ul>
         <li>
-          Developed centralized robotic control platform to support physical
-          robots with video streaming using WebRTC, Opencv, ROS, Turtlebot,
-          Arduino, and Gazebo Simulation
+          Researched on deep reinforcement learning focusing on minimizing agent
+          experiences method
         </li>
         <li>
-          Created website and Android app to view video streaming and control
-          robots over IP in real-time
+          Implemented Face Recognition and Object Detection algorithm for
+          machine vision using FaceNet and YOLO
+        </li>
+        <li>
+          Developed centralized robotic control platform to support physical
+          robots with video streaming using WebRTC, Opencv, ROS, Turtlebot,
+          Raspberry Pi, and Gazebo Simulation
         </li>
       </ul>
       <hr className="item-split" />
       <h2>Area80 Co., Ltd, Bangkok, Thailand</h2>
       <div className="date">04/2011–02/2015</div>
-      <h3>Senior Full Stack Developer</h3>
+      <h3>Senior Full Stack Software Engineer</h3>
       <ul>
         <li>
           Designed software architecture using MVC, Universal Javascript, Server
@@ -106,11 +119,11 @@ const About = () => {
       <h2>Progaming Co., Ltd</h2>
       <div className="date">03/2011–12/2013</div>
       <ul>
-        <li>“Advance Programming AS3” Instructor.</li>
+        <li>Taught “Fundamental Action Script 3” course</li>
       </ul>
       <hr className="main-split" />
       <h2>EDUCATION</h2>
-      <div className="date">Expected May 2017</div>
+      <div className="date">May 2017</div>
       <h4>Stevens Institute of Technology, Hoboken, New Jersey</h4>
       Master of Science in Software Engineering
       <hr className="item-split" />

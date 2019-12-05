@@ -1,82 +1,82 @@
 const skillDatas =[{
-                imageUrl:"https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png",
+                // imageUrl:"https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png",
                 description:"HTML5",
                 link:"https://en.wikipedia.org/wiki/HTML5"
             },{
-                imageUrl:"http://rumitverma.com/wp-content/uploads/2015/09/css3-logo-300x300.png",
+                // imageUrl:"http://rumitverma.com/wp-content/uploads/2015/09/css3-logo-300x300.png",
                 description:"CSS3",
                 link:"https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3",
             },{
-                imageUrl:"https://facebook.github.io/react/img/logo.svg",
+                // imageUrl:"https://facebook.github.io/react/img/logo.svg",
                 description:"React",
                 link:"https://facebook.github.io/react/"
             },{
-                imageUrl:"https://camo.githubusercontent.com/f28b5bc7822f1b7bb28a96d8d09e7d79169248fc/687474703a2f2f692e696d6775722e636f6d2f4a65567164514d2e706e67",
+                // imageUrl:"https://camo.githubusercontent.com/f28b5bc7822f1b7bb28a96d8d09e7d79169248fc/687474703a2f2f692e696d6775722e636f6d2f4a65567164514d2e706e67",
                 description:"Redux",
                 link:"http://redux.js.org/"
             },{
-                imageUrl:"https://facebook.github.io/flux/img/flux_logo.svg",
+                // imageUrl:"https://facebook.github.io/flux/img/flux_logo.svg",
                 description:"Flux",
                 link:"https://facebook.github.io/flux/"
             },{
-                imageUrl:"http://graphql.org/img/logo.svg",
+                // imageUrl:"http://graphql.org/img/logo.svg",
                 description:"GraphQL",
                 link:"http://graphql.org/"
             },{
-                imageUrl:"https://avatars0.githubusercontent.com/u/17189275?v=3&s=200",
+                // imageUrl:"https://avatars0.githubusercontent.com/u/17189275?v=3&s=200",
                 description:"Apollo",
                 link:"http://www.apollodata.com/"
             },{
-                imageUrl:"https://cldup.com/xFVFxOioAU.svg",
+                // imageUrl:"https://cldup.com/xFVFxOioAU.svg",
                 description:"Mocha",
                 link:"https://mochajs.org/"
             },{
-                imageUrl:"http://chaijs.com/img/chai-logo-small.png",
+                // imageUrl:"http://chaijs.com/img/chai-logo-small.png",
                 description:"Chai",
                 link:"http://chaijs.com/"
             },{
-                imageUrl:"https://facebook.github.io/jest/img/jest-outline.svg",
+                // imageUrl:"https://facebook.github.io/jest/img/jest-outline.svg",
                 description:"Jest",
                 link:"https://facebook.github.io/jest/",
                 backgroundColor:"#99424f"
             },{
-                imageUrl:"https://lodash.com/assets/img/lodash.svg",
+                // imageUrl:"https://lodash.com/assets/img/lodash.svg",
                 description:"Lodash",
                 link:"https://lodash.com/"
             },{
-                imageUrl:"https://cdn.wp.nginx.com/wp-content/themes/nginx-theme/assets/img/logo.png",
+                // imageUrl:"https://cdn.wp.nginx.com/wp-content/themes/nginx-theme/assets/img/logo.png",
                 description:"NGINX",
                 link:"https://www.nginx.com/"
             },{
-                imageUrl:"https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/220px-JQuery_logo.svg.png",
+                // imageUrl:"https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/220px-JQuery_logo.svg.png",
                 description:"jQuery",
                 link:"https://jquery.com/"
             },{
-                imageUrl:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/220px-Boostrap_logo.svg.png",
+                // imageUrl:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/220px-Boostrap_logo.svg.png",
                 description:"Bootstrap",
                 link:"http://getbootstrap.com/"
             },{
-                imageUrl:"https://babeljs.io/images/logo.svg",
+                // imageUrl:"https://babeljs.io/images/logo.svg",
                 description:"Babel",
                 link:"https://babeljs.io/"
             },{
-                imageUrl:"https://camo.githubusercontent.com/888048baa057f2073e2c2e8644158d0a23f97114/68747470733a2f2f63646e2e7261776769742e636f6d2f7072706c782f7376672d6c6f676f732f6d61737465722f7376672f7765627061636b2e737667",
+                // imageUrl:"https://camo.githubusercontent.com/888048baa057f2073e2c2e8644158d0a23f97114/68747470733a2f2f63646e2e7261776769742e636f6d2f7072706c782f7376672d6c6f676f732f6d61737465722f7376672f7765627061636b2e737667",
                 description:"Webpack",
                 link:"https://webpack.github.io/"
             },{
-                imageUrl:"http://freevector.co/wp-content/uploads/2014/01/nodemon.png",
+                // imageUrl:"http://freevector.co/wp-content/uploads/2014/01/nodemon.png",
                 description:"Nodemon",
                 link:"https://nodemon.io/"
             },{
-                imageUrl:"http://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg",
+                // imageUrl:"http://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg",
                 description:"Sass",
                 link:"http://sass-lang.com/"
             },{
-                imageUrl:"https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/220px-Unofficial_JavaScript_logo_2.svg.png",
+                // imageUrl:"https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/220px-Unofficial_JavaScript_logo_2.svg.png",
                 description:"Vanilla JS (ES6)",
                 link:"https://en.wikipedia.org/wiki/JavaScript"
             },{
-                imageUrl:"https://nodejs.org/static/images/logo.svg",
+                // imageUrl:"https://nodejs.org/static/images/logo.svg",
                 description:"Node.js®",
                 link:"https://nodejs.org/en/"
             },{
