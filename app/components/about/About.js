@@ -6,9 +6,19 @@ const About = () => {
       <hr />
       <h1>About</h1>
       <hr />
+      <h2>EDUCATION</h2>
+      <div className="date">January 2016 - May 2017</div>
+      <h4>Stevens Institute of Technology, Hoboken, New Jersey</h4>
+      Master of Science in Software Engineering
+      <h4>
+        Sirindhorn International Institute of Technology, Bangkok, Thailand
+      </h4>
+      <div className="date">June 2004 - May 2008</div>
+      Bachelor of Engineer in Communication Engineering
+      <hr className="item-split" />
       <h2>WORK EXPERIENCE</h2>
-      <h2>Cox Automotive</h2>
-      <div className="date">08/2016-05/2017</div>
+      <h2>Cox Automotive, New Hyde Park, New York</h2>
+      <div className="date">09/2017 - present</div>
       <h3>Senior Full Stack Software Engineer & Machine Learning Engineer</h3>
       <ul>
         <li>
@@ -47,7 +57,7 @@ const About = () => {
         </li>
       </ul>
       <h2>Stevens Institute of Technology, Hoboken, New Jersey</h2>
-      <div className="date">01/2016-05/2017</div>
+      <div className="date">01/2016 - 05/2017</div>
       <h3>Research Assistant</h3>
       <b>Research Interests:</b> Reinforcement Learning and Computer Vision
       <ul>
@@ -67,7 +77,7 @@ const About = () => {
       </ul>
       <hr className="item-split" />
       <h2>Area80 Co., Ltd, Bangkok, Thailand</h2>
-      <div className="date">04/2011–02/2015</div>
+      <div className="date">04/2011 – 02/2015</div>
       <h3>Senior Full Stack Software Engineer</h3>
       <ul>
         <li>
@@ -92,7 +102,7 @@ const About = () => {
       </ul>
       <hr className="item-split" />
       <h2>Design Sundae Co., Ltd, Bangkok, Thailand</h2>
-      <div className="date">12/2010–03/2011</div>
+      <div className="date">12/2010 – 03/2011</div>
       <h3>Web Developer</h3>
       <ul>
         <li>
@@ -117,21 +127,11 @@ const About = () => {
       </ul>
       <hr className="item-split" />
       <h2>Progaming Co., Ltd</h2>
-      <div className="date">03/2011–12/2013</div>
+      <div className="date">03/2011 – 12/2013</div>
       <ul>
         <li>Taught “Fundamental Action Script 3” course</li>
       </ul>
       <hr className="main-split" />
-      <h2>EDUCATION</h2>
-      <div className="date">May 2017</div>
-      <h4>Stevens Institute of Technology, Hoboken, New Jersey</h4>
-      Master of Science in Software Engineering
-      <hr className="item-split" />
-      <h4>
-        Sirindhorn International Institute of Technology, Bangkok, Thailand
-      </h4>
-      <div className="date">April 2008</div>
-      Bachelor of Engineer in Telecommunication Engineering
     </div>
   );
 };

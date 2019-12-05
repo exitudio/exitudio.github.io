@@ -45,7 +45,7 @@ const Research = () => {
             href="https://github.com/exitudio/research-ai/blob/master/experiment/GAN/1.%20GAN%20tutorial%20%5BEXIT%5D.ipynb"
             target="_blank"
           >
-            GAN with tensorflow
+            [PAPER REPLICATION] GAN with tensorflow
           </a>
         </li>
       </ul>
