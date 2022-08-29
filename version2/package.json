@@ -4,7 +4,7 @@
     "express": "^4.18.1",
     "path": "^0.12.7"
   },
-  "scripts"{
-    "start":"node index.js" //Name of the file
- }
+  "scripts": {
+    "start": "node index.js"
+  }
 }
