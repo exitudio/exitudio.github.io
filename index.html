@@ -1,395 +1,475 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
 
 <head>
+    <script src="/docs/5.3/assets/js/color-modes.js"></script>
+
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
     <title>Ekkasit Pinyoanuntapong</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap"
-        rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- Favicons -->
+    <!-- <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico"> -->
+    <meta name="theme-color" content="#712cf9">
+
+    <style>
+        .container {
+            max-width: 850px;
+        }
+
+        .img-keep-aspect {
+            display: block;
+            max-width: 100%;
+            max-height: 225px;
+            width: auto;
+            height: auto;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+
+
+
 </head>
 
 <body>
-    <!-- Navbar Start -->
-    <div class="container-fluid bg-white position-relative">
-        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
-            <!-- <a href="index.html" class="navbar-brand text-secondary">
-                <h1 class="display-4 text-uppercase">Ekkasit Pinyoanuntapong</h1>
-            </a> -->
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ml-auto py-0 pr-3 border-right">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="projects.html" class="nav-item nav-link ">Projects</a>
-                    <!-- <a href="service.html" class="nav-item nav-link">Services</a>
-                    <a href="price.html" class="nav-item nav-link">Prices</a>
-                    <a href="project.html" class="nav-item nav-link">Projects</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="team.html" class="dropdown-item">Meat The Team</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a> -->
-                </div>
-                <div class="d-none d-lg-flex align-items-center pl-4">
-                    <i class="fa fa-2x fa-envelope text-primary mr-3"></i>
-                    <div>
-                        <h6 class="text-body text-uppercase mb-1"><small>Contact Me</small></h6>
-                        <h6 class="m-0">ekkasitpin+web@gmail.com</h6>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <!-- Navbar End -->
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check2" viewBox="0 0 16 16">
+            <path
+                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+        </symbol>
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path
+                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+            <path
+                d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+        </symbol>
+        <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path
+                d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+        </symbol>
+    </svg>
 
-
-    <!-- Page Header Start -->
-    <div class="page-header container-fluid bg-primary d-flex flex-column align-items-center justify-content-center">
-        <h1 class="display-3 text-uppercase mb-3">Ekkasit Pinyoanuntapong</h1>
-        <div class="d-inline-flex text-white">
-            <h6 class="text-uppercase m-0"><a class="text-white" href="">Home</a></h6>
-            <h6 class="m-0 px-3">/</h6>
-            <h6 class="text-uppercase m-0">About</h6>
-        </div>
-    </div>
-    <!-- Page Header Start -->
-
-
-    <!-- About Start -->
-    <div class="container-fluid pt-5">
-        <div class="container pt-5">
-            <div class="row align-items-center">
-                <!-- <div class="col-lg-6">
-                    <img class="img-fluid mb-4 mb-lg-0" src="img/about.jpg" alt="">
-                </div> -->
-                <div class="col-lg-12">
-                    <h1 class="display-4 text-uppercase text-center mb-5 bg-primary">Biography</h1>
-                    <h5 class="text-primary mb-3">My research topic is data effinciency in spatio-temporal domain
-                        focusing on computervision</h5>
-                    <p class="mb-4">I am a second year PhD student in the WiNS Lab, the University of North Carolina at
-                        Charlotte, advised by Prof. Pu Wang. Prior to UNCC, I spent many wonderful years in Cox
-                        Automotive as a Machine Learning Engineer</p>
-                    <!-- <a href="" class="btn btn-primary text-uppercase py-3 px-5">Read More</a> -->
-                </div>
-                <div class="col-lg-12">
-                    <h1 class="display-4 text-uppercase text-center mb-5 bg-primary">EDUCATION</h1>
-                    <h5 class="display-10 mb-1">University of North Carolina at Charlotte, Charlotte, North Carolina,
-                        January 2021 - Present</h5>
-                    <h5 class="text-primary mb-3">Ph.D. in Computing and Information Systems</p>
-                        <h5 class="display-10 mb-1">Stevens Institute of Technology, Hoboken, New Jersey, January 2016 -
-                            May 2017</h5>
-                        <h5 class="text-primary mb-3">Master of Science in Software Engineering</p>
-                            <h5 class="display-10 mb-1">Sirindhorn International Institute of Technology, Bangkok,
-                                Thailand, June 2004 - May 2008</h5>
-                            <h5 class="text-primary mb-3">Bachelor of Engineer in Communication Engineering</p>
-                </div>
-
-                <div class="col-lg-12">
-                    <h1 class="display-4 text-uppercase text-center mb-5 bg-primary">WORK EXPERIENCE</h1>
-                </div>
-
-                <div class="col-lg-12">
-                    <h5 class="display-10 mb-1">Cox Automotive, New Hyde Park, New York</h5>
-                    <h5 class="text-primary mb-3">Machine Learning Engineer & Senior Full Stack Software Engineer,
-                        09/2017 - 11/2020</h5>
-                    <li class="mb-4">Created machine learning and statistical modeling to predict probability of booking
-                        contracts and deploy machine learning model on AWS using Sage maker, Lambda, API gateway, and
-                        EC2</li>
-                    <li class="mb-4">Developed a machine learning model to classify vehicle images and auto-fill the
-                        form for customers using Pytorch with fast.ai techniques such as auto find learning rate,
-                        dynamic learning rate, different learning rate for each layer, freeze layers, precompute
-                        activation, and test time augmentation running on AWS P2 instance</li>
-                    <li class="mb-4">Designed internal React framework architecture to be able to consume and
-                        communicate between a separated self-contain application on private npm supporting Redux and
-                        Redux-saga</li>
-                    <li class="mb-4">Refactored the profitable legacy application by decoupling data pipeline and the
-                        view components by running a new architecture in parallel without server downtime</li>
-                    <li class="mb-4">Guided engineers to follow team design pattern and company architecture</li>
-                    <li class="mb-4">Implemented continuous integration using Jenkins for automating the deployment</li>
-                    <li class="mb-4">Developed Digital Showroom web application to facilitate customers to finish all
-                        paperwork online</li>
-                </div>
-                <div class="col-lg-12">
-                    <h5 class="display-10 mb-1">Stevens Institute of Technology, Hoboken, New Jersey</h5>
-                    <h5 class="text-primary mb-1">Research Assistant, 01/2016 - 05/2017</h5>
-                    <h5 class="text-primary">Research Interests: Reinforcement Learning and Computer Vision</h5>
-                    <li class="mb-4">Researched on deep reinforcement learning focusing on minimizing agent experiences
-                        method</li>
-                    <li class="mb-4">Implemented Face Recognition and Object Detection algorithm for machine vision
-                        using FaceNet and YOLO</li>
-                    <li class="mb-4">eveloped centralized robotic control platform to support physical robots with video
-                        streaming using WebRTC, Opencv, ROS, Turtlebot, Raspberry Pi, and Gazebo Simulation</li>
-                </div>
-                <div class="col-lg-12">
-                    <h5 class="display-10 mb-1">Area80 Co., Ltd, Bangkok, Thailand</h5>
-                    <h5 class="text-primary mb-1">Senior Full Stack Software Engineer, 04/2011 – 02/2015</h5>
-                    <li class="mb-4">Designed software architecture using MVC, Universal Javascript, Server Rendering
-                        (Isomorphic), Load Balancing, Cluster, Static Cache Files, TDD, and DevOps
-                    <li class="mb-4">Developed front-end, back-end websites and embedded system using HTML, Javascript,
-                        AS3, PHP, MySql, Node.js, MongoDB, and Arduino such as CMSs, websites, game applications, motion
-                        detection, augmented reality, kinect, Wii gun, face detection, and sound recording</li>
-                    <li class="mb-4">Created mobile game application using Adobe Air for Android and iOS</li>
-                    <li class="mb-4">Designed back-end architecture using Codeigniter for PHP and designed company’s MVC
-                        front-end framework to offer the best user experience (UX)</li>
-                </div>
-                <div class="col-lg-12">
-                    <h5 class="display-10 mb-1">Design Sundae Co., Ltd, Bangkok, Thailand</h5>
-                    <h5 class="text-primary mb-1">Web Developer, 12/2010 – 03/2011</h5>
-                    <li class="mb-4">Developed interactive websites and games using AS3, HTML, Javascript, and PHP</li>
-                    <li class="mb-4">Created animation using Adobe Flash, Illustrator, and Photoshop</li>
-                </div>
-                <div class="col-lg-12">
-                    <h5 class="display-10 mb-1">Global Wireless Co., Ltd, Bangkok, Thailand</h5>
-                    <h5 class="text-primary mb-1">Front-end Leader, 06/2008–11/2010</h5>
-                    <li class="mb-4">Developed e-learning framework support real-time video streaming, interactive games
-                        and exams</li>
-                    <li class="mb-4">Managed work-flow and program structure of animation and programming in Agile team
-                    </li>
-                </div>
-                <div class="col-lg-12">
-                    <h5 class="display-10 mb-1">Progaming Co., Ltd, Bangkok, Thailand</h5>
-                    <h5 class="text-primary mb-1">Instructor, 06/2008–11/2010</h5>
-                    <li class="mb-4">Taught “Fundamental Action Script 3” course</li>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-    <div class="container-fluid py-5 bg-primary ">
-        <div class="container pt-5 pb-3">
-            <h1 class="display-4 text-uppercase text-center mb-5">Github</h1>
-            <h1 class="display-10 text-uppercase mb-1">Neural Network</h1>
-            <div class="row">
-                <div class="col-lg-6 mb-2">
-                    <a href="https://github.com/exitudio/neural-network-pytorch" target="_blank">
-                        <div class="service-item rounded p-5 mb-4"><i
-                                class="fa fa-3x fa-laptop-code text-primary mb-4"></i>
-                            <h4 class="mb-2">My own NN framework</h4>
-                            <p class="m-0">the state of the art ML techniques using Pytorch such as multiple learning
-                                rates, learning rate finder, Cosine annealing, SGD with restarts, Test Time
-                                Augmentation, dropout</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-6 mb-2">
-                    <a href="https://github.com/exitudio/numpy-neural-net" target="_blank">
-                        <div class="service-item rounded p-5 mb-4"><i
-                                class="fa fa-3x fa-laptop-code text-primary mb-4"></i>
-                            <h4 class="mb-2">Neural Network with only Numpy </h4>
-                            <p class="m-0">manual backprop</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-
-            <h1 class="display-10 text-uppercase mb-1">Computer Vision</h1>
-            <div class="row">
-                <div class="col-lg-3 mb-2">
-                    <a href="https://github.com/exitudio/research-ai/blob/master/experiment/RAM/RAM.ipynb"
-                        target="_blank">
-                        <div class="service-item rounded p-5 mb-4"><i
-                                class="fa fa-3x fa-laptop-code text-primary mb-4"></i>
-                            <h4 class="mb-2">RAM (Recurrent Models of Visual Attention) with Pytorch</h4>
-                            <p class="m-0">PAPER REPLICATION</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 mb-2">
-                    <a href="https://github.com/exitudio/research-ai/tree/master/experiment/one-shot-learning"
-                        target="_blank">
-                        <div class="service-item rounded p-5 mb-4">
-                            <h4 class="mb-2">Face recognition experiments</h4>
-                            <p class="m-0">using Contrastive Loss, Triplet Loss, Central Loss with lfw dataset and VGG
-                                dataset (~3M images)</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 mb-2">
-                    <a href="https://github.com/exitudio/research-ai/tree/master/experiment/object-localization/AR_dt"
-                        target="_blank">
-                        <div class="service-item rounded p-5 mb-4"><i
-                                class="fa fa-3x fa-laptop-code text-primary mb-4"></i>
-                            <h4 class="mb-2">Object Localization</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 mb-2">
-                    <a href="https://github.com/exitudio/research-ai/blob/master/experiment/GAN/1.%20GAN%20tutorial%20%5BEXIT%5D.ipynb"
-                        target="_blank">
-                        <div class="service-item rounded p-5 mb-4"><i
-                                class="fa fa-3x fa-laptop-code text-primary mb-4"></i>
-                            <h4 class="mb-2">GAN with tensorflow</h4>
-                            <p class="m-0">[PAPER REPLICATION]</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <h1 class="display-10 text-uppercase mb-1">Math</h1>
-            <div class="row">
-                <div class="col-lg-6 mb-2">
-                    <a href="./pages/fourier-series/" target="_blank">
-                        <div class="service-item rounded p-5 mb-4"><i
-                                class="fa fa-3x fa-laptop-code text-primary mb-4"></i>
-                            <h4 class="mb-2">Fourier Series</h4>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-    <!-- About Info Start -->
-    <!-- <div class="container-fluid py-5">
-        <div class="container pb-3">
-            <div class="row">
-                <div class="col-lg-4 mb-2">
-                    <div class="d-flex align-items-center bg-light rounded mb-4 px-5" style="height: 150px;">
-                        <i class="fa fa-3x fa-map-marker-alt text-primary mr-3"></i>
-                        <div class="d-flex flex-column">
-                            <h5 class="text-uppercase">Our Office</h5>
-                            <p class="m-0">123 Street, New York, USA</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-2">
-                    <div class="d-flex align-items-center bg-light rounded mb-4 px-5" style="height: 150px;">
-                        <i class="fa fa-3x fa-envelope-open text-primary mr-3"></i>
-                        <div class="d-flex flex-column">
-                            <h5 class="text-uppercase">Email Us</h5>
-                            <p class="m-0">info@example.com</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-2">
-                    <div class="d-flex align-items-center bg-light rounded mb-4 px-5" style="height: 150px;">
-                        <i class="fas fa-3x fa-phone-alt text-primary mr-3"></i>
-                        <div class="d-flex flex-column">
-                            <h5 class="text-uppercase">Call Us</h5>
-                            <p class="m-0">+012 345 6789</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+            aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+            <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+                <use href="#circle-half"></use>
+            </svg>
+            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+                    aria-pressed="false">
+                    <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+                        <use href="#sun-fill"></use>
+                    </svg>
+                    Light
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                    aria-pressed="false">
+                    <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+                        <use href="#moon-stars-fill"></use>
+                    </svg>
+                    Dark
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+                    aria-pressed="true">
+                    <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+                        <use href="#circle-half"></use>
+                    </svg>
+                    Auto
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
     </div> -->
-    <!-- About Info End -->
 
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-md-5" style="margin-top: 90px;">
-        <div class="row pt-5">
-            <!-- <div class="col-lg-4 col-md-6 mb-5">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="m-0 mt-n2 text-white display-4">Ekkasit Pinyoanuntapong</h1>
-                </a>
-                <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
-                <h6 class="text-uppercase text-white py-2">Follow Us</h6>
-                <div class="d-flex justify-content-start">
-                    <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div> -->
-            <div class="col-lg-3 col-md-6 mb-5"></div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-uppercase text-white mb-4">Contact Me</h4>
-                <p><i class="fa fa-map-marker-alt text-white mr-2"></i>9201 University City Blvd, Charlotte, NC 28223
-                </p>
-                <!-- <p><i class="fa fa-phone-alt text-white mr-2"></i></p> -->
-                <p><i class="fa fa-envelope text-white mr-2"></i>ekkasitpin+web@gmail.com</p>
-                <a class="btn btn-lg btn-primary mr-2" href="https://scholar.google.com/citations?user=P_4uz3UAAAAJ&amp;hl=en">Google Scholar</a>
-                <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="https://www.linkedin.com/in/ekkasitpin/"><i class="fab fa-linkedin-in"></i></a>
+    <header data-bs-theme="dark">
+        <!-- <div class="collapse text-bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4>About</h4>
+                        <p class="text-body-secondary">Add some information about the album below, the author, or any
+                            other background context. Make it a few sentences long so folks can pick up some informative
+                            tidbits. Then, link them off to some social networking sites or contact information.
 
-            </div>
-            <!-- <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-uppercase text-white mb-4">Quick Links</h4>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Home</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>About Us</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Our
-                        Services</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Pricing
-                        Plan</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Meet The
-                        Team</a>
-                    <a class="text-white-50" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Contact Us</a>
-                </div>
-            </div> -->
-
-            <!-- <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-uppercase text-white mb-4">Newsletter</h4>
-                <p class="mb-4">Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed
-                    kasd et</p>
-                <div class="w-100 mb-3">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding: 25px;"
-                            placeholder="Your Email">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary text-uppercase px-3">Sign Up</button>
-                        </div>
+                        </p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4>Contact</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                            <li><a href="#" class="text-white">Like on Facebook</a></li>
+                            <li><a href="#" class="text-white">Email me</a></li>
+                        </ul>
                     </div>
                 </div>
-                <i>Lorem sit sed elitr sed kasd et</i>
-            </div> -->
+            </div>
+        </div> -->
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <div class="btn-group">
+                    <a type="button" class="btn btn-dark" href="https://github.com/exitudio" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-github" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8">
+                            </path>
+                        </svg>
+                    </a>
+                    <a type="button" class="btn btn-dark" href="https://scholar.google.com/citations?user=P_4uz3UAAAAJ"
+                        target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
+                            viewBox="0 0 50 50">
+                            <path fill="#fff"
+                                d="M 25 2 C 12.309534 2 2 12.309534 2 25 C 2 37.690466 12.309534 48 25 48 C 37.690466 48 48 37.690466 48 25 C 48 12.309534 37.690466 2 25 2 z M 25 4 C 36.609534 4 46 13.390466 46 25 C 46 36.609534 36.609534 46 25 46 C 13.390466 46 4 36.609534 4 25 C 4 13.390466 13.390466 4 25 4 z M 21 11 L 11 20 L 17.78125 20 C 17.80125 22.847 19.967531 25.730469 23.769531 25.730469 C 24.129531 25.730469 24.529688 25.690391 24.929688 25.650391 C 24.749688 26.100391 24.560547 26.470078 24.560547 27.080078 C 24.560547 28.230078 25.140391 28.920078 25.650391 29.580078 C 24.020391 29.690078 20.989766 29.879531 18.759766 31.269531 C 16.629766 32.559531 15.980469 34.43 15.980469 35.75 C 15.980469 38.47 18.500469 41 23.730469 41 C 29.930469 41 33.220703 37.510547 33.220703 34.060547 C 33.220703 31.530547 31.779453 30.279922 30.189453 28.919922 L 28.900391 27.890625 C 28.500391 27.570625 27.949219 27.120312 27.949219 26.320312 C 27.949219 25.510313 28.500703 24.989766 28.970703 24.509766 C 30.480703 23.309766 32 21.960234 32 19.240234 C 32 18.197234 31.756203 17.348391 31.408203 16.650391 L 35 13.570312 L 35 17.277344 C 34.405 17.623344 34 18.261 34 19 L 34 25 C 34 26.104 34.896 27 36 27 C 37.104 27 38 26.104 38 25 L 38 19 C 38 18.262 37.595 17.624344 37 17.277344 L 37 12 C 37 11.957 36.980609 11.920906 36.974609 11.878906 L 38 11 L 21 11 z M 24.269531 14.240234 C 27.269531 14.240234 28.820312 18.35 28.820312 21 C 28.820312 21.65 28.739922 22.819922 27.919922 23.669922 C 27.339922 24.259922 26.370938 24.699219 25.460938 24.699219 C 22.370938 24.699219 20.949219 20.620156 20.949219 18.160156 C 20.949219 17.210156 21.14 16.220938 21.75 15.460938 C 22.33 14.710938 23.339531 14.240234 24.269531 14.240234 z M 26.039062 30.609375 C 26.409063 30.609375 26.590859 30.610391 26.880859 30.650391 C 29.620859 32.630391 30.800781 33.620234 30.800781 35.490234 C 30.800781 37.760234 28.97 39.460938 25.5 39.460938 C 21.64 39.460938 19.160156 37.590469 19.160156 34.980469 C 19.160156 32.370469 21.459766 31.499219 22.259766 31.199219 C 23.769766 30.679219 25.719062 30.609375 26.039062 30.609375 z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a type="button" class="btn btn-dark" href="https://www.linkedin.com/in/ekkasitpin" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24">
+                            <path fill="#fff"
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                </div>
+
+
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+            </div>
         </div>
-    </div>
-    <div class="container-fluid py-4 px-sm-3 px-md-5" style="background: #111111;">
-        <p class="mb-2 text-center text-white-50">&copy; <a href="#">Ekkasit Pinyoanuntapong</a>. All Rights Reserved.</p>
-        <p class="m-0 text-center text-white-50">Designed by <a href="https://htmlcodex.com">HTML Codex</a></p>
-    </div>
-    <!-- Footer End -->
+    </header>
+
+    <main>
+
+        <div class="container py-lg-5">
+            <h1 class="fw-light">Ekkasit Pinyoanuntapong (เอกสิทธิ์)</h1>
+            <p class="lead text-body-secondary">I am a Ph.D. student in the WiNS Lab at the University of North
+                Carolina at Charlotte, advised by Prof. Pu Wang. My research interests focus on the generation
+                and understanding of 3D human bodies utilizing domain adaptation, self-supervised learning, and
+                multimodal approaches.
+
+                In my previous experience, I have worked on augmented reality, physics engine, motion detection and
+                various animation software programs.
+            </p>
+            <!-- <p>
+                    <a href="#" class="btn btn-primary my-2">Main call to action</a>
+                    <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+                </p> -->
+        </div>
+
+        <div class="container py-lg-5">
+            <h1 class="fw-light">Selected Publications</h1>
+            <!-- <div class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                <img src="./assets/mmm.gif" alt="twbs" width="200" height="100" class="flex-shrink-0">
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                    <div>
+                        <h6 class="mb-0"><i>MMM: Generative Masked Motion Model</i></h6>
+                        <p class="mb-0 opacity-75">Ekkasit Pinyoanuntapong, Pu Wang, Minwoo Lee, Chen Chen</p>
+                        <p class="mb-0 opacity-75">ArXiv, 2023.</p>
+                        <p class="mb-0"><a href="https://arxiv.org/abs/2312.03596" target="_blank">[Arxiv]</a>
+                            <a href="https://exitudio.github.io/MMM-page/" target="_blank">[Webpage]</a>
+                            <a href="https://github.com/exitudio/MMM/" target="_blank">[Github]</a>
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                <div class="col-sm-3">
+                    <img src="./assets/mmm.gif" class="img-fluid" alt="twbs" width="200" height="100">
+                </div>
+                <div class="col-sm-9">
+                    <div>
+                        <h6 class="mb-0"><i>MMM: Generative Masked Motion Model</i></h6>
+                        <p class="mb-0 opacity-75">Ekkasit Pinyoanuntapong, Pu Wang, Minwoo Lee, Chen Chen</p>
+                        <p class="mb-0 opacity-75">ArXiv, 2023.</p>
+                        <p class="mb-0">
+                            <a type="button" class="btn btn-sm btn-danger" href="https://arxiv.org/abs/2312.03596"
+                                target="_blank">Arxiv</a>
+                            <a type="button" class="btn btn-sm btn-primary" href="https://exitudio.github.io/MMM-page"
+                                target="_blank">Webpage</a>
+                            <a type="button" class="btn btn-sm btn-dark" href="https://github.com/exitudio/MMM"
+                                target="_blank">Github</a>
+                        </p>
+                    </div>
+                    <!-- <small class="opacity-50 text-nowrap">now</small> -->
+                </div>
+            </div>
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-up"></i></a>
+            <div class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                <div class="col-sm-3">
+                    <img src="./assets/gaitmixer.gif" class="img-fluid" alt="twbs" width="200" height="100">
+                </div>
+                <div class="col-sm-9">
+                    <div>
+                        <h6 class="mb-0"><i>GaitMixer: Skeleton-based Gait Representation Learning via Wide-spectrum
+                                Multi-axial Mixer</i></h6>
+                        <p class="mb-0 opacity-75">Ekkasit Pinyoanuntapong, Ayman Ali, Pu Wang, Minwoo Lee, Chen Chen
+                        </p>
+                        <p class="mb-0 opacity-75">ICASSP, 2023.</p>
+
+                        <p class="mb-0">
+                            <a type="button" class="btn btn-sm btn-danger" href="https://arxiv.org/abs/2210.15491"
+                                target="_blank">Arxiv</a>
+                            <!-- <a type="button" class="btn btn-sm btn-primary" href="https://exitudio.github.io/MMM-page"
+                                target="_blank">Webpage</a> -->
+                            <a type="button" class="btn btn-sm btn-dark" href="https://github.com/exitudio/gaitmixer"
+                                target="_blank">Github</a>
+                        </p>
+                    </div>
+                    <!-- <small class="opacity-50 text-nowrap">now</small> -->
+                </div>
+            </div>
+
+            <div class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                <div class="col-sm-3">
+                    <img src="./assets/gaitsada.jpg" class="img-fluid" alt="twbs" width="200" height="100">
+                </div>
+
+                <div class="col-sm-9">
+                    <div>
+                        <h6 class="mb-0"><i>GaitSADA: Self-Aligned Domain Adaptation for mmWave Gait Recognition</i>
+                        </h6>
+                        <p class="mb-0 opacity-75">Ekkasit Pinyoanuntapong, Ayman Ali, Kalvik Jakkala, Pu Wang, Minwoo
+                            Lee, Qucheng Peng, Chen Chen, Zhi Sun</p>
+                        <p class="mb-0 opacity-75">IEEE MASS, 2023.</p>
+
+                        <p class="mb-0">
+                            <a type="button" class="btn btn-sm btn-danger" href="https://arxiv.org/abs/2301.13384"
+                                target="_blank">Arxiv</a>
+                            <a type="button" class="btn btn-sm btn-primary" href="https://exitudio.github.io/GaitSADA"
+                                target="_blank">Webpage</a>
+                            <a type="button" class="btn btn-sm btn-dark" href="https://github.com/exitudio/GaitSADA"
+                                target="_blank">Github</a>
+                        </p>
+                    </div>
+                    <!-- <small class="opacity-50 text-nowrap">now</small> -->
+                </div>
+            </div>
+
+            <div class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                <div class="col-sm-3">
+                    <img src="./assets/CNN_action.jpg" class="img-fluid" alt="twbs" width="200" height="100">
+                </div>
+
+                <div class="col-sm-9">
+                    <div>
+                        <h6 class="mb-0"><i>Skeleton-based Human Action Recognition via Convolutional Neural
+                                Networks</i>
+                        </h6>
+                        <p class="mb-0 opacity-75">Ayman Ali, Ekkasit Pinyoanuntapong, Pu Wang, Mohsen Dorodchi</p>
+                        <p class="mb-0 opacity-75">Arxiv, 2023.</p>
+                        <p class="mb-0">
+                            <a type="button" class="btn btn-sm btn-danger" href="https://arxiv.org/abs/2301.13360"
+                                target="_blank">Arxiv</a>
+                            <!-- <a type="button" class="btn btn-sm btn-primary" href="https://exitudio.github.io/GaitSADA"
+                                target="_blank">Webpage</a>
+                            <a type="button" class="btn btn-sm btn-dark" href="https://github.com/exitudio/GaitSADA"
+                                target="_blank">Github</a> -->
+                        </p>
+                    </div>
+                    <!-- <small class="opacity-50 text-nowrap">now</small> -->
+                </div>
+            </div>
+        </div>
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <div class="album py-5">
+            <div class="container">
+                <h1 class="fw-light">Projects</h1>
 
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <a class="btn btn-light card mb-4 box-shadow" style="--bs-btn-padding-x:0; --bs-btn-padding-y:0"
+                            href="https://www.youtube.com/watch?v=fIx-cthPA1M" target="_blank">
+                            <img class="card-img-top img-keep-aspect"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Thumbnail [100%x225]" src="./assets/project/entree.gif"
+                                data-holder-rendered="true">
+                            <div class="card-body">
+                                <h6>Augmented Reality + <br>Physics Engine</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <a class="btn btn-light card mb-4 box-shadow" style="--bs-btn-padding-x:0; --bs-btn-padding-y:0"
+                            href="https://www.youtube.com/watch?v=b4s1MJOuw-c" target="_blank">
+                            <img class="card-img-top img-keep-aspect"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Thumbnail [100%x225]" src="./assets/project/motiondetection.gif"
+                                data-holder-rendered="true">
+                            <div class="card-body">
+                                <h6 class="card-text">Motion Detection</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <a class="btn btn-light card mb-4 box-shadow" style="--bs-btn-padding-x:0; --bs-btn-padding-y:0"
+                            href="https://www.youtube.com/watch?v=J-ShIrxnIVE" target="_blank">
+                            <img class="card-img-top img-keep-aspect"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Thumbnail [100%x225]" src="./assets/project/fuji.gif" data-holder-rendered="true">
+                            <div class="card-body">
+                                <h6 class="card-text">Augmented Reality + <br> GPS & Gyroscope</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <a class="btn btn-light card mb-4 box-shadow" style="--bs-btn-padding-x:0; --bs-btn-padding-y:0"
+                            href="https://www.youtube.com/watch?v=vdDib8RiPmQ" target="_blank">
+                            <img class="card-img-top img-keep-aspect"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Thumbnail [100%x225]" src="./assets/project/pathplaning.gif"
+                                data-holder-rendered="true">
+                            <div class="card-body">
+                                <h6 class="card-text">Path Planning Simulation</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <a class="btn btn-light card mb-4 box-shadow" style="--bs-btn-padding-x:0; --bs-btn-padding-y:0"
+                            href="https://www.youtube.com/watch?v=LOokaoDvuKk" target="_blank">
+                            <img class="card-img-top img-keep-aspect"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Thumbnail [100%x225]" src="./assets/project/turtlebot.gif"
+                                data-holder-rendered="true">
+                            <div class="card-body">
+                                <h6 class="card-text">Control Turtlebot & Roomba Using Unix Socket</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <a class="btn btn-light card mb-4 box-shadow" style="--bs-btn-padding-x:0; --bs-btn-padding-y:0"
+                            href="https://www.youtube.com/watch?v=7DgkaIqelmw" target="_blank">
+                            <img class="card-img-top img-keep-aspect"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Thumbnail [100%x225]" src="./assets/project/selfbalance.jpg"
+                                data-holder-rendered="true">
+                            <div class="card-body">
+                                <h6 class="card-text">Self-balance Arduino</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <a class="btn btn-light card mb-4 box-shadow" style="--bs-btn-padding-x:0; --bs-btn-padding-y:0"
+                            href="https://www.youtube.com/watch?v=J_MPt1BCdiE" target="_blank">
+                            <img class="card-img-top img-keep-aspect"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Thumbnail [100%x225]" src="./assets/project/isometric.gif"
+                                data-holder-rendered="true">
+                            <div class="card-body">
+                                <h6 class="card-text">Isometric Game</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <a class="btn btn-light card mb-4 box-shadow" style="--bs-btn-padding-x:0; --bs-btn-padding-y:0"
+                            href="https://www.youtube.com/watch?v=xUq_z4U_-Go" target="_blank">
+                            <img class="card-img-top img-keep-aspect"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Thumbnail [100%x225]" src="./assets/project/facedetection.gif"
+                                data-holder-rendered="true">
+                            <div class="card-body">
+                                <h6 class="card-text">Interactive Website using Face Detection</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <a class="btn btn-light card mb-4 box-shadow" style="--bs-btn-padding-x:0; --bs-btn-padding-y:0"
+                            href="https://www.youtube.com/watch?v=qjPuBl1rbDs" target="_blank">
+                            <img class="card-img-top img-keep-aspect"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Thumbnail [100%x225]" src="./assets/project/origami.gif"
+                                data-holder-rendered="true">
+                            <div class="card-body">
+                                <h6 class="card-text">Interactive Website using Stop Motion</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <a class="btn btn-light card mb-4 box-shadow" style="--bs-btn-padding-x:0; --bs-btn-padding-y:0"
+                            href="./version3/pages/fourier-series/index.html" target="_blank">
+                            <img class="card-img-top img-keep-aspect"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Thumbnail [100%x225]" src="./assets/project/fourierseries.gif"
+                                data-holder-rendered="true">
+                            <div class="card-body">
+                                <h6 class="card-text">Fourier Series Interactive Website</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <a class="btn btn-light card mb-4 box-shadow"
+                            style="--bs-btn-padding-x:0; --bs-btn-padding-y:0; padding-top: 121px; padding-bottom: 121px;"
+                            href="./version3/projects.html" target="_blank">
+                            <div class="card-body">
+                                <h6 class="card-text">See More...</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    </main>
+
+    <footer class="text-body-secondary py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#">Back to top</a>
+            </p>
+            <p class="mb-1">© Copyright 2024 Ekkasit Pinyoanuntapong. I'm from Bangkok, Thailand. My Thai name is
+                เอกสิทธิ์.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
